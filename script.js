@@ -15,8 +15,8 @@ document.fonts.ready.then(() => {
         scrollTrigger: {
           trigger: el,
           start: opts.start || "top 85%",
-          end: "top 20%",         // 👈 control scroll distance
-          scrub: true,            // 👈 smooth scroll-linked effect
+          end: "top 20%",
+          scrub: true,
           toggleActions: (opts.once == 1) ? "play none none none" : "play none none reset"
         },
         onUpdate: function () {
@@ -26,15 +26,17 @@ document.fonts.ready.then(() => {
     });
   }
 
-  // ✅ Scroll-synced effect
+  //  Enhanced scroll-in effect
   animateSplit(".scroll-in", {
     opacity: 0,
     y: 80,
     skewY: 10,
+    skewX: 5,
+    rotationX: 10,
     rotationZ: 8,
     scale: 0.7,
     filter: "blur(10px)",
-    transformOrigin: "50% 50% -20px",
+    transformOrigin: "50% 50% -50px",
     ease: "power3.out"
   });
 });
