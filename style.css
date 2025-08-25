@@ -1,0 +1,18 @@
+
+
+
+
+.split {
+  opacity: 0;
+  text-align:center;
+  color: rgb(14, 16, 15);
+  font-size: clamp(2rem, 6rem, 3vw);
+  letter-spacing: 0.05rem;
+  will-change: transform;
+  color: #0e100f;
+}
+
+.split * {
+  will-change: transform;
+}
+
